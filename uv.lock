@@ -5,7 +5,7 @@ requires-python = "==3.9.*"
 [[package]]
 name = "20261117-insurance-app"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "numpy" },
     { name = "pandas" },
