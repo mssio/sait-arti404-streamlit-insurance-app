@@ -8,3 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
+
+# PyCaret logs
+logs.log
