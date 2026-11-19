@@ -10,9 +10,9 @@ A Streamlit web app that predicts a patient's hospital insurance charges using a
 ## Requirements
 
 - [uv](https://docs.astral.sh/uv/)
-- Python 3.9. uv installs it automatically if it's missing.
+- Python 3.11. uv installs it automatically if it's missing. pycaret 3.3.2 doesn't support Python 3.12 or newer.
 
-The model (`gbr_insurance_charges.pkl`) was trained with pandas 1.5.3 and numpy 1.23.5, so those versions are pinned in `pyproject.toml`. Newer pandas versions can't load the model.
+The model (`gbr_insurance_charges.pkl`) was trained with pandas 1.5.3, so pandas is pinned to that version in `pyproject.toml`. pandas 2.x can't load the model.
 
 ## Setup and run
 
@@ -22,6 +22,12 @@ uv run streamlit run app.py
 ```
 
 Then open http://localhost:8501 in your browser.
+
+## Deployment
+
+The app is deployed on Streamlit Community Cloud: https://insurance-mss.streamlit.app/
+
+Community Cloud installs dependencies from `uv.lock`. When deploying, choose **Python 3.11** under **Advanced settings**. Pushes to `main` update the app automatically.
 
 ## Batch CSV format
 
