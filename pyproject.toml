@@ -1,0 +1,15 @@
+[project]
+name = "20261117-insurance-app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Mario", email = "1535102+mssio@users.noreply.github.com" }
+]
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "numpy==1.23.5",
+    "pandas==1.5.3",
+    "pycaret>=3.3.2",
+    "streamlit>=1.50.0",
+]
